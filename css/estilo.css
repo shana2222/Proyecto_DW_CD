@@ -1,0 +1,159 @@
+@import url(https://fonts.google.com/share?selection.family=Roboto);
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-color: bisque;
+	overflow-x: hidden;
+}
+
+h1{
+	font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+a {
+	color: black;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+/*Inicio Estilados para el header - menú de navegación */
+header {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 249, 249);
+   
+  }
+.cabecera {
+	background-color: cornsilk;
+	position: sticky;
+	top: 0px;  
+    height: 100px;
+}
+
+.menu {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 95px;
+  }
+
+.menu li{
+	display: inline-block;
+	font-size: 2rem;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+  
+#top {
+    width: auto;
+    height: 100%;
+  }
+
+/*Fin Estilados para el header - menú de navegación */
+
+/*Inicio estilados seccion bienvenida del index*/
+.presentacion{    
+    font-size: 18px;
+    color: rgb(245, 242, 242);
+    text-align: center;
+    margin: 0px 15% ;
+    line-height: 20px;  
+}
+.presentacion img{
+    width: 50%;
+    height: 100%; 
+}
+
+.imagenFondo{
+    height: 100vh;
+    background-image: url("../assets/img/fondoIndex.jpg");
+    background-repeat:repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;    
+ }
+
+/* Estilando Cards Menu del index - según clase  grabada falta trabajo aún */
+
+.cardsIndex img{    
+    width: 20%;
+    object-fit: cover;
+    height: 25vh;
+    display: inline;
+ }
+
+/* Estilado Footer- Fijo abajo*/
+.footer{
+     width: 100%;
+     height: 100%;
+     background-color: black;
+     opacity: 0.5;
+     position: relative;
+     bottom: 0;     
+}
+.footer p{
+    text-align: center;
+    color: antiquewhite;
+}
+.footer a{
+    color: antiquewhite;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+ /* Estilando Cards galeria - según clase  grabada falta trabajo aún
+ .hijo{
+    background-color: dimgray;
+    border: 1px solid black;
+    width: 25%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+ */
+
+.padre{
+    background-color:gray;
+    border: 1px solid black;
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+}
+ .hijo{
+    border: 1px solid black;
+    width: 25%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.hijo img{    
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+ }
+
